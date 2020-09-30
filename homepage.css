@@ -1,0 +1,71 @@
+ /* nav  bar css*/
+ body>.container-fluid{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+}
+
+.img-fluid{
+    width: 40%;
+    position: relative;
+    left:30%;
+}
+
+.container-fluid>.row>.col{
+    text-align: center;
+    
+    
+}
+
+
+.container-fluid>.row>.col>a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 100%;
+}
+.container-fluid:first-of-type>.row>.col>a:hover{
+    text-shadow:  1px 1px #494646;
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+body{
+
+}
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
