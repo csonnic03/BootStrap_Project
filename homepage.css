@@ -37,13 +37,14 @@
 
 
 
-
+/* the css for the main body */
 body{
 background: grey;
 }
 
 body>.container-fluid:nth-of-type(2){
-    background-color: red;
+    margin-top: 5%;
+    background-color: rgb(252, 66, 66);
     width: 90%;
 }
 
@@ -51,8 +52,24 @@ body>.container-fluid:nth-of-type(2)>.col-6:first-of-type{
 width: 50%;
 height: 100%;
 }
+body>.container-fluid:nth-of-type(2)>.col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body>.container-fluid:nth-of-type(2)>.col-6:nth-of-type(2)>h2{
+text-align: center;
+width: 100%;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+}
 
 
+/*   this is the css for the progress bar   */
+.tasks>h2{
+    text-align: center;
+}
 
 
 
