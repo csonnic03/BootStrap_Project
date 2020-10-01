@@ -1,8 +1,8 @@
-body{
+/*body{
     width:100%;
     height: auto;
     background-color:rgb(109,101,101);
-}
+}*/
 .siteContainer{
     position:absolute;
     background-color: transparent;
@@ -12,15 +12,21 @@ body{
 .standardBox{
   background-color: rgb(116,115,253);
   border:white solid 2px;
-  width:95%;
+  color:rgb(255,230,100);
+  padding:2.5%;
+  /*  
+  width:90%;
   margin-left:2.5%;
   margin-right:2.5%;
+  */
   margin-bottom:5%;
+  /*
   position:relative;
+  */
 }
 p{
     color:rgb(255,230,100);
-    font-size:200%;
+
 }
 .myNav{
     position:fixed;
@@ -39,4 +45,7 @@ p{
     border:white solid 2px;
     width:15%;
     background-color: rgb(116,115,253);
+}
+a{
+    color:rgb(255,230,100);
 }
