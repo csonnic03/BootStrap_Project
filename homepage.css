@@ -43,8 +43,8 @@ background: grey;
 }
 
 body>.container-fluid:nth-of-type(2){
-    background-color: red;
     width: 90%;
+    color:rgb(255,230,100);
 }
 
 body>.container-fluid:nth-of-type(2)>.col-6:first-of-type{
