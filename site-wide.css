@@ -1,0 +1,42 @@
+body{
+    width:100%;
+    height: auto;
+    background-color:rgb(109,101,101);
+}
+.siteContainer{
+    position:absolute;
+    background-color: transparent;
+    width:100%;
+    top:20%;
+}
+.standardBox{
+  background-color: rgb(116,115,253);
+  border:white solid 2px;
+  width:95%;
+  margin-left:2.5%;
+  margin-right:2.5%;
+  margin-bottom:5%;
+  position:relative;
+}
+p{
+    color:rgb(255,230,100);
+    font-size:200%;
+}
+.myNav{
+    position:fixed;
+    height: auto;
+    width:95%;
+    top:0%;
+    margin-left:2.5%;
+    background-color: white;
+    z-index:3;
+    overflow:hidden;
+}
+.SectionTitle{
+    border:white;
+    left:20%;
+    position:relative;
+    border:white solid 2px;
+    width:15%;
+    background-color: rgb(116,115,253);
+}
