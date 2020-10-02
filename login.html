@@ -4,23 +4,42 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Normal CSS-->
+    <link rel="stylesheet" type="text/css" href="site-wide.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+
     <title>Login</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="/action_page.php">
-        <fieldset>
-            <legend style="float:right">Login:</legend>
-            <label for="user">Username:</label>
-            <input type="text" id="user" name="fname"><br>
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="fname"><br>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
+    <!--creates the nav bar-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 logo">
+                <img src="cropped-log.png" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-8">
+                <h3>ISB Login</h3>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="container standardBox">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Employee ID</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Employee ID">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"><br>
+            <button type="button" class="btn btn-primary" onclick=LoginISB()>Submit</button>
+          </form>
+    </div>
+      
     <script type="text/javascript" src="login.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

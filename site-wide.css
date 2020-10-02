@@ -1,8 +1,9 @@
-/*body{
+body{/*
     width:100%;
     height: auto;
+    */
     background-color:rgb(109,101,101);
-}*/
+}
 .siteContainer{
     position:absolute;
     background-color: transparent;
@@ -18,9 +19,8 @@
   width:90%;
   margin-left:2.5%;
   margin-right:2.5%;
-  */
   margin-bottom:5%;
-  /*
+  
   position:relative;
   */
 }
@@ -48,4 +48,7 @@ p{
 }
 a{
     color:rgb(255,230,100);
+}
+h3{
+    text-align: center;
 }
