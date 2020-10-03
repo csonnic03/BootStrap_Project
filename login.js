@@ -1,12 +1,10 @@
-var user = "Cade123";
-var pass = "Cade123";
-var enteredUser=document.getElementsByTagName('input')[0].value;
-var enteredPass=document.getElementsByTagName('input')[1].value;
-function LoginISB(){
-    if(user===enteredUser&&pass===enteredPass)
-    {
-        console.log("Login")
-    }
-    else{
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) 
+{
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }

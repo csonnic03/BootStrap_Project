@@ -1,5 +1,5 @@
- /* nav  bar css*/
- body>.container-fluid:first-of-type{
+/* nav  bar css*/
+body > .container-fluid:first-of-type{
     border: black 3px solid;
     position: relative;
     width: 90%;
@@ -13,73 +13,59 @@
     left:30%;
 }
 
-.container-fluid>.row>.col{
-    text-align: center;
-    
-    
+.container-fluid > .row > .col{
+    text-align: center;    
 }
 
 
-.container-fluid>.row>.col>a{
+.container-fluid > .row > .col > a{
     text-align: center;
     position: relative;
     top: 30%;
     height: 100%;
     font-size: 100%;
 }
-.container-fluid:first-of-type>.row>.col>a:hover{
+.container-fluid:first-of-type > .row > .col > a:hover{
     text-shadow:  1px 1px #494646;
-
     text-decoration: none;
 }
-
-
-
-
-
 /* the css for the main body */
 body{
-background: grey;
-  color:rgb(255,230,100);
-
+    background: grey;
+    color:rgb(255,230,100);
 }
 
-body>.container-fluid:nth-of-type(2){
+body > .container-fluid:nth-of-type(2){
     margin-top: 5%;
     background-color: rgb(116,115,253);
     width: 90%;
 }
-
-body>.container-fluid:nth-of-type(2)>.col-6:first-of-type{
-width: 50%;
-height: 100%;
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
 }
-body>.container-fluid:nth-of-type(2)>.col-6:nth-of-type(2){
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
     width: 100%;
 }
 
-body>.container-fluid:nth-of-type(2)>.col-6:nth-of-type(2)>h2{
-text-align: center;
-width: 100%;
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
 }
 .tasks-header{
     text-align: center;
     width: 100%;
 }
-
-
 /*   this is the css for the progress bar   */
-.tasks>h2{
+.tasks > h2{
     text-align: center;
 }
 .progress-text{
-    
     text-align: center;
     position: relative;
     top: 50%;
 }
-
-/*  the following changes how wide the progress bar is and how faqr ahead it is*/
+/*  the following changes how wide the progress bar is and how far ahead it is*/
 
 
 

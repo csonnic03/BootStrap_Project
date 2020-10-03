@@ -1,109 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
 </head>
 <body>
-
-
-<!--creates the nav bar-->
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-2 logo">
-            <img src="cropped-log.png" class="img-fluid" alt="Responsive image">
-          </div>
-          
-          <div class="col">
-            
-            <a href="homepage.html">Homepage</a>
-            
-          </div>    
-          
-          <div class="col">
-            <a href="">enter link here</a>
-          </div>    
-          
-          <div class="col">
-            <a href="">enter link here</a>
-          </div>    
-          
-          <div class="col">
-            <a href="">enter link here</a>
-
-          </div>
-
-        </div>
-        
+  <!--creates the nav bar-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 logo">
+        <img src="cropped-log.png" class="img-fluid" alt="Responsive image">
       </div>
-      <!--this is where the code for the main body begins-->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6">
-            <ul>
-              <li><a href="">1</a></li>
-              <li><a href="">2</a></li>
-              <li><a href="">3</a></li>
-              <li><a href="">4</a></li>
-              <li><a href="">5</a></li>
-              <li><a href="">6</a></li>
-
-            </ul>
-          </div>    
-          
-          <div class="col-6">
-            <h1 class="tasks-header">Tasks  for today</h1>
-            <form action="">
-              <label for="task-1">
-              <input type="checkbox" name="task-1" id="task-1">
-              Check North and East walls for any breaches
-              </label>
-              <br>
-              <label for="task-2">
-                <input type="checkbox" name="task-2" id="task-2">
-                Check Squad equipment
-              </label>
-              <br>
-              <input type="checkbox" name="task-3" id="task-3">
-              <label for="task-3">
-                Clean equipment that has gone without cleaning for a week as according to your check</label>
-              <br>
-              <input type="checkbox" name="task-4" id="task-4">
-              <label for="task-4">Check Squad equipment</label>
-
-
-              
-              
-            </form>
-            <!--the checklist progress bar-->
-     
-<div class="container tasks">
-  <h2>Task progress</h2>
-  <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 5%" >
-      <p id="progress-insert" class="progress-text">0%</p>
+      <div class="col">
+        <a href="homepage.html">Homepage</a>
+      </div>    
+      <div class="col">
+        <a href="calender.html">Calendar</a>
+      </div>    
+      <div class="col">
+        <a href="hr.html">Human Resources</a>
+      </div>    
+      <div class="col">
+        <a href="material-request.html">Material Request</a>
+      </div>
     </div>
   </div>
-</div>
-            
-          </div>    
-          
+  <!--this is where the code for the main body begins-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <ul>
+          <li><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">5</a></li>
+          <li><a href="">6</a></li>
+        </ul>
+      </div>    
+      <div class="col-6">
+        <h1 class="tasks-header">Tasks  for today</h1>
+        <form action="">
+          <label for="task-1">
+            <input type="checkbox" name="task-1" id="task-1">
+            Check North and East walls for any breaches
+          </label>
+          <br>
+          <label for="task-2">
+            <input type="checkbox" name="task-2" id="task-2">
+            Check Squad equipment
+          </label>
+          <br>
+          <input type="checkbox" name="task-3" id="task-3">
+          <label for="task-3">Clean equipment every week</label>
+          <br>
+          <input type="checkbox" name="task-4" id="task-4">
+            <label for="task-4">Check Squad equipment</label>
+        </form>
+        <!--the checklist progress bar-->
+        <div class="container tasks">
+          <h2>Task progress</h2>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+              <p id="progress-insert" class="progress-text">0%</p>
+            </div>
           </div>
-
         </div>
-        
       </div>
-      <!--Bootstrap stuff-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>    
-<!-- ^bootstrap stuff   -->
-
-<!--  this script will check to see if the tasks have been completed  -->
-<script src="checklist.js"></script>
+    </div>
+  </div>
+  <!--Bootstrap stuff-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>    
+  <!-- ^bootstrap stuff   -->
+  <!--  this script will check to see if the tasks have been completed  -->
+  <script src="checklist.js"></script>
 </body>
 </html>
