@@ -5,8 +5,816 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>homepage</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="homepage.css">
+  <!--<link rel="stylesheet" href="homepage.css">-->
   <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
+  <style>
+    /* nav  bar css*//***
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: relative;
+    left:30%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 100%;
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+/*
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+}
+/*the style for the ul header*/
+/*.external{
+ margin-right: 4%;
+    font-size: 3em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+/*.other-links{
+    list-style-type: none;
+    margin-left: 15%;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+/*.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+/*this is for the internal manuals*/
+/*.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 200%;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+
+*/
+
+.container-fluid:last-of-type{
+  border: white 1px solid;
+  
+}
+.container-fluid:nth-of-type(2){
+  border: white 1px solid;
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px)  { 
+    /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)   { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px)  { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 5%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px)  {
+            /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+         /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 20%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }
+
+  </style>
 </head>
 <body>
   <!--creates the nav bar-->
@@ -32,14 +840,16 @@
   <!--this is where the code for the main body begins-->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6">
-        <ul>
-          <li><a href="">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">5</a></li>
-          <li><a href="">6</a></li>
+      <div class="col-6">         
+         <h2 class="external">External Links</h2>
+
+        <ul class="other-links">
+          <li><a href="">Soldier's guide to living</a></li>
+          <li><a href="">Upcoming Missions</a></li>
+          <li><a href="">How to find a comrade </a></li>
+          <li><a href="">Tools and equipment usage</a></li>
+          <li><a href="">How to not blow up</a></li>
+          <li><a href="">Avoiding the enemy</a></li>
         </ul>
       </div>    
       <div class="col-6">
@@ -55,15 +865,18 @@
             Check Squad equipment
           </label>
           <br>
-          <input type="checkbox" name="task-3" id="task-3">
-          <label for="task-3">Clean equipment every week</label>
+          
+          <label for="task-3"><input type="checkbox" name="task-3" id="task-3">
+            Clean equipment every week</label>
           <br>
-          <input type="checkbox" name="task-4" id="task-4">
-            <label for="task-4">Check Squad equipment</label>
+         
+            <label for="task-4"> 
+              <input type="checkbox" name="task-4" id="task-4">
+              Check vehichles for any problems</label>
         </form>
         <!--the checklist progress bar-->
         <div class="container tasks">
-          <h2>Task progress</h2>
+          <h2 class="progress-header">Task progress</h2>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
               <p id="progress-insert" class="progress-text">0%</p>
@@ -72,7 +885,18 @@
         </div>
       </div>
     </div>
+    <!--this is for the internal manuals-->
+
   </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-4"><a href=""> weapon-cleaning.pdf</a> </div>
+    <div class="col-4">
+      <h2 class="internal-header">Internal manuals</h2>
+    <a href=""> Non-disclosure-agreement.pdf</a> </div>
+    <div class="col-4"><a href=""> How to bandage a friendly </a>
+  </div>
+</div>
   <!--Bootstrap stuff-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>

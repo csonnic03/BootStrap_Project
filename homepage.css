@@ -1,10 +1,13 @@
-/* nav  bar css*/
+/* nav  bar css*//*
 body > .container-fluid:first-of-type{
     border: black 3px solid;
     position: relative;
     width: 90%;
     height: 20%;
     background: white;
+}
+body{
+    height: auto;
 }
 
 .img-fluid{
@@ -24,6 +27,137 @@ body > .container-fluid:first-of-type{
     top: 30%;
     height: 100%;
     font-size: 100%;
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+/*
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+}
+/*the style for the ul header*/
+/*.external{
+ margin-right: 4%;
+    font-size: 3em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+/*.other-links{
+    list-style-type: none;
+    margin-left: 15%;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+/*.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+/*this is for the internal manuals*/
+/*.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 200%;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
 }
 .container-fluid:first-of-type > .row > .col > a:hover{
     text-shadow:  1px 1px #494646;
@@ -51,11 +185,35 @@ body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
 body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
     text-align: center;
     width: 100%;
+    font-size: 1em;
 }
 .tasks-header{
     text-align: center;
     width: 100%;
+    font-size: 1.5em;
 }
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
 /*   this is the css for the progress bar   */
 .tasks > h2{
     text-align: center;
@@ -65,22 +223,577 @@ body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
     position: relative;
     top: 50%;
 }
-/*  the following changes how wide the progress bar is and how far ahead it is*/
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
 
 
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
 
 
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { }
+}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { }
+@media (min-width: 576px)  { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { }
+@media (min-width: 768px)  { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 5%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { }
+@media (min-width: 992px)  {
+            /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+         /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 20%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }

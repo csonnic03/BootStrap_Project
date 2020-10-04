@@ -16,13 +16,12 @@ function progressBar(){
     checkCount+=1
     task1.disabled=true;
     task1check=true
-    alert(checkCount)
   }
   else if(task2.checked===true && task2check===false){
     checkCount+=1
     task2.disabled=true;
     task2check=true
-    alert(checkCount)
+    
 
   }
   else if(task3.checked===true && task3check===false){
@@ -30,14 +29,13 @@ function progressBar(){
     task3.disabled=true;
     task3check=true
 
-    alert(checkCount)
 
   }
   else if(task4.checked===true && task4check===false){
     checkCount+=1
     task4.disabled=true;
     task4check=true
-    alert(checkCount)
+    
 
   }
 
@@ -62,6 +60,6 @@ function progressBar(){
 }
 progressBar()
 setInterval(progressBar(), 1);
-alert('remember to move the css so that its not external')
+
 window.addEventListener('click',progressBar)
 //
