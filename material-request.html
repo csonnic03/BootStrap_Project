@@ -2,10 +2,10 @@
 <html>
     <head>
         <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="site-wide.css">
         <link rel="stylesheet" href="homepage.css">
-        <link rel="stylesheet" href="bootstrap.css">
+        <!--<link rel="stylesheet" href="bootstrap.css">-->
         <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
         <title>Material Request Form</title>
         <style>
@@ -38,6 +38,22 @@
                 position: absolute;
                 left: 50px;
             }
+            .standardBox{
+                position: relative;
+                left: 5%;
+                width: 90%;
+            }
+            .custom-select{
+                width: 25%;
+            }
+            .form-group:first-of-type>input:first-of-type{
+                left: 30%;
+            }
+
+            .form-group:first-of-type>input:nth-of-type(2){
+                left: 60%;
+            }
+
         </style>
     </head>
     <body>
@@ -92,7 +108,7 @@
             <div class="col standardBox" style="top:10%">
                 <form class="was-validated">
                     <fieldset>
-                        <legend>Weapons</legend>
+                        <legend>Long gun</legend>
                         <div class="form-group">
                             <select class="custom-select" required>
                                 <option value="">Select Weapon</option>
@@ -104,8 +120,29 @@
                                 <option value="6">Knifes</option>
                                 <option value="7">Daggers</option>
                             </select>
-                            <label for="quantity">Quantity:</label>
-                            <input name="number" type="number" id="quantity" required>
+                            <input placeholder="Quantity" name="number" type="number" id="quantity" required>
+                            
+
+                            <input placeholder="Ammo" name="number" type="number" id="Ammo-long" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sidearms</legend>
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value="">Select Weapon</option>
+                                <option value="1">Shotgun</option>
+                                <option value="2">AK-47</option>
+                                <option value="3">M16 Rifle</option>
+                                <option value="4">Side Arms</option>
+                                <option value="5">Gernades</option>
+                                <option value="6">Knifes</option>
+                                <option value="7">Daggers</option>
+                            </select>
+                            <input placeholder="Quantity" name="number" type="number" id="quantity" required>
+                            
+
+                            <input placeholder="Ammo" name="number" type="number" id="Ammo-long" required>
                         </div>
                     </fieldset>
                 </form>
@@ -178,8 +215,8 @@
             </div>
         </div>
         <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
