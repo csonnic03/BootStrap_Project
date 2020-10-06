@@ -2,13 +2,689 @@
 <html>
     <head>
         <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="site-wide.css">
         <link rel="stylesheet" href="homepage.css">
-        <link rel="stylesheet" href="bootstrap.css">
+        <!--<link rel="stylesheet" href="bootstrap.css">-->
         <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
         <title>Material Request Form</title>
         <style>
+            
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)  { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 40%;
+    position: absolute;
+    left:30%;
+    top: 15%;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: .7em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px)  { 
+        /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 5%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    font-size: 1em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px)  {
+            /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 35%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+         /* nav  bar css*/
+body > .container-fluid:first-of-type{
+    border: black 3px solid;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background: white;
+}
+body{
+    height: auto;
+}
+
+.img-fluid{
+    width: 20%;
+    position: absolute;
+    left:30%;
+    top: 0%;
+    padding-top: 0px;
+}
+
+.container-fluid > .row > .col{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;    
+}
+
+
+.container-fluid > .row > .col > a{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 100%;
+    font-size: 1.4em;
+    color: rgb(255,230,100);
+}
+.container-fluid:first-of-type > .row > .col > a:hover{
+    text-shadow:  1px 1px #494646;
+    text-decoration: none;
+}
+/* the css for the main body */
+body{
+    background: grey;
+    color:rgb(255,230,100);
+}
+
+body > .container-fluid:nth-of-type(2){
+    margin-top: 5%;
+    background-color: rgb(116,115,253);
+    width: 90%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:first-of-type{
+    width: 50%;
+    height: 100%;
+}
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2){
+    width: 100%;
+}
+
+body > .container-fluid:nth-of-type(2) > .col-6:nth-of-type(2) > h2{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+}
+.tasks-header{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+/*the style for the ul header*/
+.external{
+ margin-right: 4%;
+    font-size: 1.5em;
+    position: relative;
+    left: 10%;
+}
+
+
+/*the style for the ul*/
+.other-links{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.other-links>li:first-of-type{
+    right: 10%;
+}
+ 
+.other-links>li>a{
+color: rgb(255,230,100);
+}
+
+/*   this is the css for the progress bar   */
+.tasks > h2{
+    text-align: center;
+}
+.progress-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+.progress-header{
+    font-size: 1em;
+}
+/*this is for the internal manuals*/
+.container-fluid:last-of-type{
+    padding-top: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(116,115,253);
+}
+.container-fluid:last-of-type>.row>.col-4>a{
+    
+    width: 10%;
+    height: 150%;
+    color: rgb(255,230,100)
+
+}
+.internal-header{    
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    font-size: 1.5em;
+}
+
+
+.container-fluid:last-of-type>.row>.col-4:first-of-type>a{
+    margin-top: 50%;
+    width: 15%;
+    height: 100px;
+    position: relative;
+    left: 20%;
+}
+ }
+
             input {
                 position: absolute;
                 right: 100px;
@@ -38,6 +714,25 @@
                 position: absolute;
                 left: 50px;
             }
+            .standardBox{
+                position: relative;
+                left: 5%;
+                width: 90%;
+            }
+            .custom-select{
+                width: 35%;
+            }
+            .form-group:first-of-type>input:first-of-type{
+                left: 40%;
+            }
+
+            .form-group:first-of-type>input:nth-of-type(2){
+                left: 55%;
+            }
+            fieldset:first-of-type>.form-group>label{
+                left: 0px;
+            }
+
         </style>
     </head>
     <body>
@@ -67,10 +762,11 @@
             <div class="col standardBox" style="top:10%">
                 <form class="was-validated">
                     <fieldset>
-                        <legend>Name, Email, and EmployeeID</legend>
+                       <!-- <legend>Name, Email, and EmployeeID</legend>-->
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                             <div class="col-sm-10">
+                                <label for="inputEmail3">Email</label>
                               <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                             </div>
                             </div>
@@ -92,20 +788,41 @@
             <div class="col standardBox" style="top:10%">
                 <form class="was-validated">
                     <fieldset>
-                        <legend>Weapons</legend>
+                        <legend>Long gun</legend>
                         <div class="form-group">
                             <select class="custom-select" required>
                                 <option value="">Select Weapon</option>
                                 <option value="1">Shotgun</option>
                                 <option value="2">AK-47</option>
                                 <option value="3">M16 Rifle</option>
-                                <option value="4">Side Arms</option>
-                                <option value="5">Gernades</option>
-                                <option value="6">Knifes</option>
-                                <option value="7">Daggers</option>
+                                <option value="4">Scar-L</option>
+                                <option value="5">Barret 50 cal</option>
+                                <option value="6">M24</option>
+                                <option value="7">M249 LMG</option>
                             </select>
-                            <label for="quantity">Quantity:</label>
-                            <input name="number" type="number" id="quantity" required>
+                            <input placeholder="Quantity" name="number" type="number" id="quantity" required>
+                            
+
+                            <input placeholder="Ammo" name="number" type="number" id="Ammo-long" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sidearms</legend>
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value="">Select Weapon</option>
+                                <option value="1">1911 a1</option>
+                                <option value="2">Berratta</option>
+                                <option value="3">Desert eagle</option>
+                                <option value="4">glock 17</option>
+                                <option value="5">glock 18c</option>
+                                <option value="6">kolibri</option>
+                                <option value="7">Flintlock</option>
+                            </select>
+                            <input placeholder="Quantity" name="number" type="number" id="quantity" required>
+                            
+
+                            <input placeholder="Ammo" name="number" type="number" id="Ammo-long" required>
                         </div>
                     </fieldset>
                 </form>
@@ -132,24 +849,56 @@
                                 <option value="13">ZIPLOCK BAGS</option>
                                 <option value="14">RUFFIES DISPOSABLE 55 GALLON DRUM LINERS</option>
                             </select>
-                            <label for="quantity">Quantity:</label>
-                            <input name="number" type="number" id="quantity" required>
+                
+                            <input name="number" placeholder="Quantity" type="number" id="quantity" required>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Medical Supplies</legend>
+                        
                         <div class="form-group">
                             <select class="custom-select" required>
                                 <option value="">Select Supplies</option>
-                                <option value="1">MedKit</option>
-                                <option value="2">Bandages</option>
-                                <option value="3">Crutches</option>
-                                <option value="4">Gauze</option>
-                                <option value="5">Defibrillator</option>
-                                <option value="6">Wheelchair</option>
+                                <option value="1">BackPack</option>
+                                <option value="2">Pen</option>
+                                <option value="3">Notebook</option>
+                                <option value="4">Desk</option>
+                                <option value="5">Stapler</option>
+                                <option value="6">Pencils</option>
+                                <option value="7">Pencil Shapener</option>
+                                <option value="8">Tape</option>
+                                <option value="9">Ink Pads</option>
+                                <option value="10">Ink for Ink Pads</option>
+                                <option value="11">POLYPROPYLENE ROPE</option>
+                                <option value="12">ALCONOX POWDER DETERGENTE</option>
+                                <option value="13">ZIPLOCK BAGS</option>
+                                <option value="14">RUFFIES DISPOSABLE 55 GALLON DRUM LINERS</option>
                             </select>
-                            <label for="quantity">Quantity:</label>
-                            <input name="number" type="number" id="quantity" required>
+                           
+                            <input name="number" placeholder="Quantity" type="number" id="quantity" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value="">Select Supplies</option>
+                                <option value="1">BackPack</option>
+                                <option value="2">Pen</option>
+                                <option value="3">Notebook</option>
+                                <option value="4">Desk</option>
+                                <option value="5">Stapler</option>
+                                <option value="6">Pencils</option>
+                                <option value="7">Pencil Shapener</option>
+                                <option value="8">Tape</option>
+                                <option value="9">Ink Pads</option>
+                                <option value="10">Ink for Ink Pads</option>
+                                <option value="11">POLYPROPYLENE ROPE</option>
+                                <option value="12">ALCONOX POWDER DETERGENTE</option>
+                                <option value="13">ZIPLOCK BAGS</option>
+                                <option value="14">RUFFIES DISPOSABLE 55 GALLON DRUM LINERS</option>
+                            </select>
+                            
+                            <input name="number" placeholder="Quantity" type="number" id="quantity" required>
                         </div>
                     </fieldset>
                 </form>
@@ -157,20 +906,38 @@
             <div class="col standardBox" style="top:10%">
                 <form class="was-validated">
                     <fieldset>
-                        <legend>Vehicles</legend>
+                        <legend>Land Vehichles</legend>
                         <div class="form-group">
                             <select class="custom-select" required>
                                 <option value="">Select Vehicle</option>
-                                <option value="1">Tank</option>
-                                <option value="2">SUV</option>
-                                <option value="3">Car</option>
-                                <option value="4">Truck</option>
-                                <option value="5">Boat</option>
-                                <option value="4">Jet/Private Plane</option>
-                                <option value="5">Helicopter</option>
+                                <option value="1">m1 abrams </option>
+                                <option value="2">Humvee</option>
+                                <option value="3">Sentry APC</option>
+                                <option value="4">CyberTruck</option>
+                                <option value="5">Amphibious Truck</option>
+                                <option value="4">1972 honda civic</option>
+                                <option value="5">2003 ford five-hundred</option>
                             </select>
-                            <label for="quantity">Quantity:</label>
-                            <input name="number" type="number" id="quantity" required>
+                
+                            <input name="number" placeholder="Quantity" type="number" id="quantity" required>
+                            <input id="button" type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Air Vehicles</legend>
+                        <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="1">Boeing</option>
+                                <option value="2">F-22 Rapter</option>
+                                <option value="3">A-10 warthog</option>
+                                <option value="4">x-15</option>
+                                <option value="5">VTOL</option>
+                                <option value="4">uh-144 falcon</option>
+                                <option value="5">B-2 spirit</option>
+                            </select>
+                            
+                            <input name="number" placeholder="Quantity" type="number" id="quantity" required>
                             <input id="button" type="submit" value="Submit">
                         </div>
                     </fieldset>
@@ -178,8 +945,8 @@
             </div>
         </div>
         <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>

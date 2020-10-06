@@ -8,7 +8,9 @@ let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oc
 
 let monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
-
+document.getElementById("monthAndYear").style.color = "black";
+document.getElementById("daysOfTheWeek").style.color = "black";
+document.getElementById("jump-to").style.color = "black";
 
 function next() {
     currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
@@ -35,6 +37,8 @@ function showCalendar(month, year) {
 
     let tbl = document.getElementById("calendar-body"); // body of the calendar
 
+    document.getElementById("calendar-body").style.color = "black";
+
     // clearing all previous cells
     tbl.innerHTML = "";
 
@@ -48,7 +52,6 @@ function showCalendar(month, year) {
     for (let i = 0; i < 6; i++) {
         // creates a table row
         let row = document.createElement("tr");
-
         //creating individual cells, filing them up with data.
         for (let j = 0; j < 7; j++) {
             if (i === 0 && j < firstDay) {
@@ -72,10 +75,21 @@ function showCalendar(month, year) {
                 date++;
             }
 
-
         }
 
         tbl.appendChild(row); // appending each row into calendar body.
     }
-
 }
+document.addEventListener("arlojscontrolsloaded", function () {
+var upcomingEventsControl = {
+    moduleType: "UpcomingEvents",
+    targetElement: "#upcoming-events-control",
+    maxCount: 5,
+    template: "#upcoming-events-control-template"
+};  
+new ArloWebControls().start({
+    "platformID": "demo.arlo.co",
+    "modules": [
+        upcomingEventsControl
+    ]});
+});

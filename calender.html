@@ -11,7 +11,6 @@
     <!-- Normal CSS -->
     <link rel="stylesheet" href="site-wide.css">
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="bootstrap.css">
     <link rel="shortcut icon" href="smol-logo.png" type="image/x-icon">
     <style>
         label, option{
@@ -47,7 +46,7 @@
         <div class="card">
             <h3 class="card-header" id="monthAndYear"></h3>
             <table class="table table-bordered table-responsive-sm" id="calendar">
-                <thead>
+                <thead id="daysOfTheWeek">
                 <tr>
                     <th>Sun</th>
                     <th>Mon</th>
@@ -72,7 +71,7 @@
             </div>
             <br/>
             <form class="form-inline">
-                <label class="lead mr-2 ml-2" for="month">Jump To: </label>
+                <label class="lead mr-2 ml-2" for="month" id="jump-to">Jump To: </label>
                 <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
                     <option value=0>Jan</option>
                     <option value=1>Feb</option>
@@ -131,12 +130,19 @@
                 <option value=2028>2028</option>
                 <option value=2029>2029</option>
                 <option value=2030>2030</option>
-            </select></form>
+            </select>
+          </form>
+          <div id="upcoming-events-control"></div>  
         </div>
     </div>
 
 <!--<button name="jump" onclick="jump()">Go</button>-->
 <script src="calender.js"></script>
+<script src="//connect.arlocdn.net/jscontrols/1.0/init.js" charset="utf-8" defer="defer"></script>       
+ 
+<script id="upcoming-events-control-template" type="text/html">
+    <%= Name %>
+</script>
 
 <!-- Optional JavaScript for bootstrap -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -149,7 +155,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
 
 </body>
 </html>
