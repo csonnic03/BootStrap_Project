@@ -712,23 +712,57 @@ color: rgb(255,230,100);
         <div class="row">
           <div class="col-12">
             <div class="row">
-              <div class="col-4" style="text-align:center">Salary:</br>
-                $220,000
+              <div class="col-4" style="text-align:center"><h3>Salary:</br>
+                $220,000</h3>
               </div>
-              <div class="col-4" style="text-align:center">Payroll Email:
+              <div class="col-4" style="text-align:center"><h3>Payroll Email:
                 </br>
-                <a href="mailto:debbie.gadsdenACC@ISB.org">debbie.gadsdenACC@ISB.org</a>
-              </div>
-              <div class="col-4" style="text-align:center">Payroll Phone:
-                </br><a href="tel:374-274-2867">374-274-2867</a>
+                <a href="mailto:debbie.gadsdenACC@ISB.org">debbie.gadsdenACC@ISB.org</a></h3>
+            </div>
+              <div class="col-4" style="text-align:center"><h3>Payroll Phone:
+                </br><a href="tel:374-274-2867">374-274-2867</a></h3>
               </div>  
             </div>
+            </div>  
           </div>    
-          <div class="col-12 standardBox">
-            <form action="">
-            </form>
-          </div>    
-        </div>
-      </div>
+        <div class="col-12 ">
+                <form action="" style="border:white solid 2px">
+                    <div class="row">
+                    <div class="col-12">
+                        <h2>HR Report</h2>
+                    </div>
+                </div>
+            <fieldset style="border:white solid 2px;">
+                <legend style="border:white solid 2px;width:auto;">Your Contact Info:</legend>
+                <div class="for-group row"> 
+                    <div class="col-4">
+                        <label for="First_Name" class="col-form-label" ><h3>First Name</h3></label>
+                        <input type="text" id="First_Name" name="Fname" placeholder="First Name" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="Last_Name" class="col-form-label"><h3>Last Name</h3></label>
+                        <input type="text" id="Last_Name" name="Lname" placeholder="Last Name" class="form-control">                
+                    </div>
+                    <div class="col-4">
+                        <label for="Email" class="col-form-label"><h3>Company Email</h3></label>
+                        <input type="email" id="Email" name="Email" placeholder="Company Email" class="form-control">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset style="border:white solid 2px">
+                <legend style="border:white solid 2px">incident Info</legend>
+                <div class="row" >
+                    <div class="col-9">
+                        <label for="Submitter_View" class="col-form-label"><h3>Your View Of The Incident</h3></label>
+                        <input type="text" id="Submitter_View" name="incident" placeholder="Please type your view of the incident" class="form-control" >
+                    </div>
+                    <div class="col-3">
+                        <label for="involved_persons" class="col-form-label"><h3>Involved Person(s)</h3>
+                        <input type="text" id="involved_persons" name="involved" placeholder="Please list all involed persons/witnesses" class="form-control"
+                    </div>
+                <div class="col-3"></div>
+            </fieldset>
+        </form>
+        </div>      
   </body>
 </html>
